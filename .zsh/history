@@ -1,0 +1,54 @@
+cd ..
+ping kernel.org
+mount -t vfat /dev/sdd1 /mnt/win_e
+sudo mount -t vfat /dev/sdd1 /mnt/win_e
+sudo mc
+sudo umount /mnt/win_e
+netstat -a
+netstat --help
+netstat -al
+ifconfig
+alsamixer
+unrar -x ___________________________________________.rar
+unrar x ___________________________________________.rar
+q
+f
+m
+smplayer \?\?\ \?\?\?\?\?\?.avi
+smplayer Kung.Fu.Panda.Holiday.Special.2010.HDTVRip.Rus.avi
+sudo umount /media/sdd1
+sudo mount -t vfat -ouser,noauto,iocharset=utf8 /dev/sdd1 /mnt/win_e
+cd torrents
+rtorrent
+sudo pumount /media/sdd1
+sudo mount /dev/sdd2 /mnt/storage-30
+fix_cdrom
+sudo mount /dev/sdd1 /mnt/storage-30
+sudo mount /dev/sdd3 /mnt/storage-30
+sudo mount /dev/sdd6 /mnt/storage-30
+sudo mount /dev/sdd7 /mnt/storage-30
+sudo mount /dev/sdd3 /mnt/storage
+cat /etc/mtab
+eix flashpl
+eix flash
+eix firefox
+sudo mount /dev/sdd4 /mnt/storage
+sudo mount /dev/sdc4 /mnt/storage-30
+sudo mount /dev/sdc1 /mnt/storage-30
+sudo mount /dev/sdd1 /mnt/storage
+df
+su
+sudo mount /dev/sdc2 /mnt/storage
+sudo mount /dev/sdc3 /mnt/storage-
+sudo mount /dev/sdc3 /mnt/storage-30
+sudo umount /mnt/storage
+sudo umount /mnt/storage-30
+start[
+startx
+ls
+ls -lq
+ls -la
+mc
+which mc
+whiexit
+exit

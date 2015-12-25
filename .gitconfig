@@ -1,0 +1,131 @@
+[user]
+	name = Konstantin Groshev
+	email = mail@groshev.net
+[core]
+	#autocrlf = input
+	#safecrlf = true
+	excludesfile = ~/.gitignore
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+	quotepath = false
+	# pager = less -FXR
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+	
+[mergetool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$PWD/$BASE\"" "\"$PWD/$REMOTE\"" "\"$PWD/$LOCAL\"" "\"$PWD/$MERGED\""
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[difftool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$REMOTE\"" "\"$LOCAL\""
+	
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[alias]
+	dt = difftool
+	news = log -p HEAD@{1}..HEAD@{0}
+
+	l = "!git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS"
+		latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+	ra = !git log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+
+	lg2 = log --graph --date-order -C -M --pretty=format:'<%h> %ad [%an] %Cgreen%d%Creset %s' --all --date=short
+
+	hist = log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %Cgreen(%cr)%Creset%n%w(80,8,8)%s' --graph
+
+	histfull = log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %Cgreen(%cr)%Creset%n%w(80,8,8)%s%n' --graph --name-status
+	l1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	l2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l3 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	st = status
+	s = status --short --branch
+	ci = commit
+	co = checkout
+	br = branch
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+	br = branch -a
+	s = status -u -s
+	cl = log --stat -C -2
+	c = commit
+	d = diff --color-words
+	dh = diff HEAD
+	dc = diff --staged
+	dw = diff --word-diff
+	dcw = diff --color-words
+	dm = !git diff | mate
+	dv = !git diff | vim
+	who = shortlog -s --
+	ph = push
+	pl = pull
+	lp = log -p
+	lod = log --oneline --decorate
+	lg = log --graph
+	lpo = log --pretty=oneline --abbrev-commit --graph --decorate --all
+	l1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	l2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l3 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	spull = !git-svn fetch && git-svn rebase
+	spush = !git-svn dcommit
+	sync = !git pull && git push
+	es = !git pull --rebase && git push
+	lf = log --pretty=fuller
+	ignorechanges = update-index --assume-unchanged
+	noticechanges = update-index --no-assume-unchanged
+	gc-ap = gc --aggressive --prune
+	listconf = config --global --list
+	cam = commit -a -m
+	lsm = log -M --stat
+	hse = log --stat -5
+	diffall = diff HEAD
+	logr = log -M
+	logr2 = log --stat -M -2
+	logit = log --stat -M
+	scrub = !git reset --hard && git clean -fd
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
+[diff]
+    tool = p4merge
+
+[difftool]
+       prompt = false
+
+[difftool "smartsynchronize"]
+       cmd = /Applications/SmartSynchronize.app/smartsynchronize.sh "$LOCAL" "$REMOTE"
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = true
+[merge]
+	tool = p4merge
+[advice]
+	statusHints = false
+[pull]
+	rebase = true
+[push]
+	default = simple
