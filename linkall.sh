@@ -10,6 +10,10 @@ rm ~/.tigrc
 rm ~/.ssh/config
 rm ~/.dircolors
 rm ~/.tmux.conf
+rm -rf ~/.vim
+rm -rf ~/.vimoutliner
+rm ~/.vimrc
+rm ~/.vimoutlinerrc
 
 ln -s ~/java_ee/apps/dotfiles/.zshrc ~/.zshrc
 ln -s ~/java_ee/apps/dotfiles/zsh_custom ~/.oh-my-zsh/custom
@@ -22,6 +26,10 @@ ln -s ~/java_ee/apps/dotfiles/.tigrc ~/.tigrc
 ln -s ~/java_ee/apps/dotfiles/.ssh/config ~/.ssh/config
 ln -s ~/java_ee/apps/dotfiles/.dircolors ~/.dircolors
 ln -s ~/java_ee/apps/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/java_ee/apps/dotfiles/.vim ~/.vim
+ln -s ~/java_ee/apps/dotfiles/.vimoutliner ~/.vimoutliner
+ln -s ~/java_ee/apps/dotfiles/.vimrc ~/.vimrc
+ln -s ~/java_ee/apps/dotfiles/.vimoutlinerrc ~/.vimoutlinerrc
 
 ls -lah ~/.zshrc
 ls -lah ~/.oh-my-zsh/custom
@@ -34,3 +42,7 @@ ls -lah ~/.tigrc
 ls -lah ~/.ssh/config
 ls -lah ~/.dircolors
 ls -lah ~/.tmux.conf
+ls -lah ~/.vim
+ls -lah ~/.vimoutliner
+ls -lah ~/.vimrc
+ls -lah ~/.vimoutlinerrc
