@@ -19,7 +19,7 @@ alias sys_info='sw_vers'
 alias reload!='. ~/.zshrc'
 #alias c='pygmentize -O style=tomorrownighteighties -f console256 -g'
 alias pyg="pygmentize -f terminal256 -g -P style=monokai"
-
+alias digga="dig +nocmd any +multiline +noall +answer"
 
 
 # Count files in subdirs
