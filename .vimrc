@@ -67,7 +67,7 @@ set nohlsearch " do not highlight searched for phrases
 set incsearch " BUT do highlight as you type you search phrase
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$ " what to show when I hit :set list
 
-set columns=80 lines=30       " don't inherit geometry from parent term (160/80)
+"set columns=80 lines=30       " don't inherit geometry from parent term (160/80)
 
 set so=10 " Keep 10 lines (top/bottom) for scope
 set novisualbell " don't blink
