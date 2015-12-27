@@ -10,14 +10,18 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/java_ee/apps"
 alias g="git"
 alias h="history"
 alias j="jobs"
 
 alias sys_info='sw_vers'
 alias reload!='. ~/.zshrc'
-alias c='pygmentize -O style=tomorrownighteighties -f console256 -g'
+#alias c='pygmentize -O style=tomorrownighteighties -f console256 -g'
+alias pyg="pygmentize -f terminal256 -g -P style=monokai"
+
+
+
 # Count files in subdirs
 alias lll='for i in *; do echo "`ls -1aRi "$i" | awk "/^[0-9]+ / { print $1 }" | sort -u | wc -l` $i" ; done | sort -n'
 alias grep='grep --color=auto'
@@ -77,3 +81,15 @@ alias zshconfig="st ~/.zshrc"
 alias ohmyzsh="st ~/.oh-my-zsh"
 
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+function did {
+    echo `date +%s`: $1 >> ~/.done
+}
+
+function proj {
+    cd $(find ~/java_ee/apps -maxdepth 1 -type d | percol)
+}
+
+function pless {
+    pygmentize -f terminal256 -g -P style=monokai $* | less -FiXRM
+}

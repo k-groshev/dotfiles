@@ -25,7 +25,8 @@ brew install thefuck
 # git console gui
 brew install tig
 
-pygmentize ?
+#pygmentize для раскраски кода в консольных командах типа less или cat
+sudo easy_install Pygments 
 --------------------------------------------
 I wanted to map ⌥ + Left and ⌥ + Right to go backward and forward a word, respectively. I also wanted to have Option+Delete kill a word.
 
