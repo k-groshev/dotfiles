@@ -13,6 +13,12 @@ bindkey "\e\[dw" backward-kill-word
 ZSH_THEME="bullet-train"
 #ZSH_THEME="gamussa_skwp"
 
+BULLETTRAIN_TIME_SHOW=false
+BULLETTRAIN_RUBY_SHOW=false
+BULLETTRAIN_VIRTUALENV_SHOW=false
+BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -33,7 +39,7 @@ HISTCONTROL=ignoredups:ignorespace
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ant atom battery bower bgnotify brew brew-cask compleat colorize dash docker encode64 fasd Forklift gem git-extras gitfast gitignore glassfish gradle grails grunt gulp httpie jsontools marked2 mercurial mvn node npm osx rake rbenv sublime thefuck svn vagrant web-search xcode z)
+plugins=(ant atom battery bower bgnotify brew brew-cask compleat colorize dash docker encode64 fasd Forklift gem git-extras gitfast gitignore glassfish gradle grails grunt gulp httpie jsontools marked2 mercurial mvn node npm osx rake rbenv sublime spring thefuck svn vagrant web-search xcode z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,3 +83,5 @@ export SDKMAN_DIR="${HOME}/.sdkman" && source "${HOME}/.sdkman/bin/sdkman-init.s
 
 # added by travis gem
 #[ -f /Users/apple/.travis/travis.sh ] && source /Users/apple/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
