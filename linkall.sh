@@ -14,6 +14,7 @@ rm -rf ~/.vim
 rm -rf ~/.vimoutliner
 rm ~/.vimrc
 rm ~/.vimoutlinerrc
+rm ~/.psqlrc
 
 ln -s ~/java_ee/apps/dotfiles/.zshrc ~/.zshrc
 ln -s ~/java_ee/apps/dotfiles/zsh_custom ~/.oh-my-zsh/custom
@@ -30,6 +31,7 @@ ln -s ~/java_ee/apps/dotfiles/.vim ~/.vim
 ln -s ~/java_ee/apps/dotfiles/.vimoutliner ~/.vimoutliner
 ln -s ~/java_ee/apps/dotfiles/.vimrc ~/.vimrc
 ln -s ~/java_ee/apps/dotfiles/.vimoutlinerrc ~/.vimoutlinerrc
+ln -s ~/java_ee/apps/dotfiles/.psqlrc ~/.psqlrc
 
 ls -lah ~/.zshrc
 ls -lah ~/.oh-my-zsh/custom
@@ -46,3 +48,6 @@ ls -lah ~/.vim
 ls -lah ~/.vimoutliner
 ls -lah ~/.vimrc
 ls -lah ~/.vimoutlinerrc
+ls -lah ~/.psqlrc
+
+mkdir -p ~/.history
