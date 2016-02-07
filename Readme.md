@@ -27,6 +27,10 @@ brew install tig
 
 #pygmentize для раскраски кода в консольных командах типа less или cat
 sudo easy_install Pygments 
+
+# fzf
+brew install fzf
+/usr/local/opt/fzf/install
 --------------------------------------------
 I wanted to map ⌥ + Left and ⌥ + Right to go backward and forward a word, respectively. I also wanted to have Option+Delete kill a word.
 

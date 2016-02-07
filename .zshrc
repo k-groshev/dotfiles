@@ -84,4 +84,10 @@ export SDKMAN_DIR="${HOME}/.sdkman" && source "${HOME}/.sdkman/bin/sdkman-init.s
 # added by travis gem
 #[ -f /Users/apple/.travis/travis.sh ] && source /Users/apple/.travis/travis.sh
 
+export FZF_DEFAULT_OPTS='
+  --bind ctrl-f:page-down,ctrl-b:page-up
+  --color fg:102,bg:233,hl:65,fg+:15,bg+:234,hl+:108
+  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
+'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
