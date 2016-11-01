@@ -73,3 +73,14 @@ sudo easy_install Pygments
 brew install fzf
 /usr/local/opt/fzf/install
 ```
+
+### tmux -- Make it integrate with the OS X system clipboard
+```sh
+brew install reattach-to-user-namespace
+```
+
+## font hasklig для idea
+```sh
+brew tap caskroom/fonts
+brew cask install font-hasklig
+```
