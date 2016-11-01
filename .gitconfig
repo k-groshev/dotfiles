@@ -105,7 +105,7 @@
 	smudge = git media smudge %f
 
 [diff]
-    tool = p4merge
+    tool = ksdiff
 
 [difftool]
        prompt = false
