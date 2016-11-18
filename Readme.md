@@ -84,3 +84,8 @@ brew install reattach-to-user-namespace
 brew tap caskroom/fonts
 brew cask install font-hasklig
 ```
+
+## mackup - synchro your configs via dropbox
+```sh
+brew install mackup
+```
