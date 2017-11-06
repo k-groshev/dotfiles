@@ -62,7 +62,7 @@ export EDITOR="subl -w"
 #xmlcatalog
 #export XML_CATALOG_FILES="`brew --prefix`/etc/xml/catalog"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="c3df40b7eb672703820dee86982accfdbde32f18"
+export HOMEBREW_GITHUB_API_TOKEN="9903381f25046400d79db0d1aee8933c5c41e78c"
 
 export JRUBY_OPTS="-Xcompat.version=RUBY1_9 -Xcompile.mode=OFF -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-Xverify:none -Xcext.enabled=true"
 
@@ -92,3 +92,4 @@ export FZF_DEFAULT_OPTS='
 '
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
