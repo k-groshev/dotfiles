@@ -62,7 +62,7 @@ export EDITOR="subl -w"
 #xmlcatalog
 #export XML_CATALOG_FILES="`brew --prefix`/etc/xml/catalog"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="9903381f25046400d79db0d1aee8933c5c41e78c"
+export HOMEBREW_GITHUB_API_TOKEN="3b92551be723fcdef500abe0bc85fe93bc7e138a"
 
 export JRUBY_OPTS="-Xcompat.version=RUBY1_9 -Xcompile.mode=OFF -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-Xverify:none -Xcext.enabled=true"
 
