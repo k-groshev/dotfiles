@@ -53,3 +53,4 @@ alias mlog='sudo tail -f /var/log/maillog | ccze -A -p syslog'
 
 alias pst='pstree -G | less'
 
+alias mc='LANG=en_EN.UTF-8 mc'
