@@ -22,6 +22,18 @@ Key combination: ⌥ + Right
 Action: Send Escape Sequence: [1\;9D
 ```
 
+
+# Tmux configuration
+## install tmux plugin manager
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+then run tmux and install all listed in configuration plugins via pressing
+```
+Ctrl+a + I
+```
+after that reload the configuration. All the plugins should be in place (status bar will be changed).
+
 # Receipts for tools
 
 ## sdkman - conrolling using sdk versions on your host
@@ -89,3 +101,5 @@ brew cask install font-hasklig
 ```sh
 brew install mackup
 ```
+
+ brew install antigen
