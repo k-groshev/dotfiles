@@ -132,7 +132,7 @@ export EDITOR="vi"
 export GEM_HOME="$HOME/.gem"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="ad7a423b54b0e8b50a2786df073652fb838bc042"
+#export HOMEBREW_GITHUB_API_TOKEN="do not forget to add it!"
 
 export JRUBY_OPTS="-Xcompat.version=RUBY1_9 -Xcompile.mode=OFF -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-Xverify:none -Xcext.enabled=true"
 
