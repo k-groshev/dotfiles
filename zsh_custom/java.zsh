@@ -4,3 +4,4 @@ alias setjdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7); export PATH=$J
 alias setjdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8); export PATH=$JAVA_HOME/bin:$PATH'
 alias setjdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 9); export PATH=$JAVA_HOME/bin:$PATH'
 alias setjdk10='export JAVA_HOME=$(/usr/libexec/java_home -v 10); export PATH=$JAVA_HOME/bin:$PATH'
+alias setjdk11='export JAVA_HOME=$(/usr/libexec/java_home -v 11); export PATH=$JAVA_HOME/bin:$PATH'
