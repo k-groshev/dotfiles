@@ -2,7 +2,6 @@
 	name = Konstantin Groshev
 	email = real.mt@gmail.com
 [core]
-	#autocrlf = input
 	#safecrlf = true
 	excludesfile = ~/.gitignore
 	autocrlf = input
@@ -129,3 +128,5 @@
 	rebase = true
 [push]
 	default = simple
+[http]
+	version = HTTP/2
